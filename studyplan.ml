@@ -7,7 +7,7 @@ type length =
   | Infinite
   | Finite of int ;;
 
-(* info -- A type containing some random information about this study plan *) 
+(* info -- A type containing some random information about this study plan *)
 type info = {
   name : string;      (* the name of the study plan *)
   length : length;    (* the index of the last course in the study plan *)
@@ -27,7 +27,7 @@ and inventor = "You!" ;;
 
 (* exists -- Predicate holds if the index n is appropriate for the
    `courses` *)
-let exists n = 
+let exists n =
   n > 0 && n < Array.length courses ;;
 
 (* eval -- Return the n-th course in the study plan *)
